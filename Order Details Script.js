@@ -1,10 +1,10 @@
 // ====== Creds Config ======
-var TENANT      = "basicplz";
+var TENANT      = "Tenant";
 var BASE_ORIGIN = "https://" + TENANT + ".unicommerce.com";
 var CLIENT_ID   = "my-trusted-client";
-var USERNAME    = "contact@dreamgazer.in";
-var PASSWORD    = "Enesar@2214";
-var FACILITY    = "Basicplz";
+var USERNAME    = "Login_Username";
+var PASSWORD    = "login_Password";
+var FACILITY    = "Tenant";
 
 
 // ====== Column Configuration (include=true/false) ======
