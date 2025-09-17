@@ -1,2 +1,4 @@
 # Unicommerce-API-Sheets-Automation
-Google Apps Script solution for Unicommerce e-commerce platform integration. Automated order data fetching, Google Sheets synchronization, OAuth token management, and customizable data filtering with built-in duplicate prevention and error handling.
+A Google Apps Script solution that integrates with the Unicommerce e-commerce platform.
+This script automatically fetches order data, keeps it synchronized in real time with Google Sheets, manages OAuth tokens, and allows customizable data filtering.
+It also includes built-in logic to detect and prevent duplicate orders along with robust error handling.
