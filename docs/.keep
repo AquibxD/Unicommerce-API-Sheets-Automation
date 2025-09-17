@@ -1,1 +1,72 @@
 
+
+Unicommerce API - Google Sheets Automation
+Project Overview
+This project automates the fetching and synchronization of order data from the Unicommerce platform into Google Sheets using Google Apps Script. It handles OAuth authentication, queries saleOrder APIs, prevents duplicate data entries, and writes structured order and item details to sheets for real-time e-commerce order tracking.
+
+Features
+OAuth password grant-based authentication to Unicommerce API.
+
+Fetch sale orders using /saleOrder/search endpoint with customizable date filters.
+
+Fetch detailed order information with /saleorder/get.
+
+Data writing to Google Sheets with duplicate entry avoidance.
+
+Configurable columns with deep field mapping from API response.
+
+Automated trigger setup to periodically fetch data.
+
+Comprehensive error handling and logging.
+
+Formats date/time columns in Sheets for better readability.
+
+Folder Structure
+src/: Google Apps Script source code files.
+
+docs/: Project documentation and setup guides.
+
+examples/: Sample usage scripts, tests, or demos.
+
+README.md: Main project overview.
+
+LICENSE: Project license text.
+
+Setup Guide
+Clone this repository to your local machine or Google Apps Script environment.
+
+Configure your credentials (TENANT, CLIENT_ID, USERNAME, PASSWORD) in the config section of the script.
+
+Open Google Sheets and link the script.
+
+Run the authentication function once to generate and save OAuth tokens.
+
+Use the menu added by the script to fetch orders immediately or setup automatic fetching triggers (every 1, 5, 60 minutes, or daily).
+
+Monitor the "Orders" and "Order Details" sheets for data updates.
+
+Edit columns and filters in the script as per your business needs.
+
+How to Use
+Open the Google Sheets linked to this script.
+
+Use the custom menu “Unicommerce Data Option” to trigger data fetch manually or schedule auto fetches.
+
+Data will be written into sheets with columns matching your configured REQUIRED_COLUMNS.
+
+Troubleshooting
+Check Google Apps Script logs for API errors and authentication issues.
+
+Ensure client credentials and tenant info are accurate.
+
+Verify active internet connectivity for API calls.
+
+Refresh the OAuth token manually using the menu if fetching stops.
+
+Make sure the Google Sheets have the necessary permissions for the script.
+
+Contribution
+Feel free to open issues or submit pull requests for enhancements or bug fixes.
+
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
