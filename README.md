@@ -3,19 +3,21 @@ A Google Apps Script solution that integrates with the Unicommerce e-commerce pl
 This script automatically fetches order data, keeps it synchronized in real time with Google Sheets, manages OAuth tokens, and allows customizable data filtering.
 It also includes built-in logic to detect and prevent duplicate orders along with robust error handling.
 
-Features
-OAuth password grant-based authentication to Unicommerce API.
+The repository:
+Download the project from GitHub.
 
-Fetch sale orders using /saleOrder/search endpoint with customizable date filters.
+Set your credentials:
+Add your Unicommerce API credentials (tenant URL, username, password) inside the script files (such as Order Details Script.js).
 
-Fetch detailed order information with /saleorder/get.
+Deploy script in Google Apps Script:
+Upload the script to Google Apps Script and allow required permissions.
 
-Data writing to Google Sheets with duplicate entry avoidance.
+Connect to Google Sheet:
+Make sure your Google Sheet has the right columns and connect it with the Apps Script.
 
-Configurable columns with deep field mapping from API response.
+Test the setup:
+Run the script once, check if data is coming correctly, and watch for errors.
 
-Automated trigger setup to periodically fetch data.
+(Optional) Automate sync:
+Set up time-based triggers for regular, automatic updates.
 
-Comprehensive error handling and logging.
-
-Formats date/time columns in Sheets for better readability.
